@@ -1,7 +1,14 @@
 gsap.from("#clabs",{
-    y:70,
+     
+    y:110,
     duration:1,
-    delay:7
+     
+    scrollTrigger:{
+        trigger:"#page2 ",
+        scroller:"body",
+        start:"top -10%",
+        markers:true
+    }
      
 }) 
 gsap.from("#about h1 ",{
@@ -79,3 +86,30 @@ gsap.from("#page3 #op h1 ",{
     duration:4,
     delay:7
 })
+gsap.from("#page1 #mainNav",{
+     
+    y:-110,
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#page1 ",
+        scroller:"body",
+        start:"top 10%",
+        markers:true
+    }
+     
+}) 
+
+gsap.from("#page3 #op h1",{
+     
+    x:0,
+    duration:"7ms",
+    opacity:1,
+    scrollTrigger:{
+        trigger:"#page3 ",
+        scroller:"body",
+        start:"top -10%",
+        markers:true
+    }
+     
+}) 
