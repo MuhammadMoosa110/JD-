@@ -1,0 +1,342 @@
+/* style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(273deg, rgba(0, 225, 255, 0.203) -18.42%, rgba(0, 255, 238, 0.196) 45.03%, rgba(0, 255, 179, 0.00) 135.54%);
+}
+#page1{
+    display: flex;
+    justify-content: center;
+     
+    width: 100%;
+    height: 100vh;
+     
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+     
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    
+}
+#page1 #mainNav ul a{
+ gap: 60;
+ font-family: sans-serif;
+ color: teal;
+ margin: 20px;
+ margin-top: 20%;
+ text-decoration: none;
+}
+#page1 #mainNav{
+    position: fixed;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    opacity: 0.9; 
+    height: 5vh; 
+     
+    animation-name: nav;
+    animation-duration: 7s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes nav{
+    from{
+        transform: translateY(-150%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+#page1 #mainText{ 
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 15%;
+    animation : none;
+
+    height: fit-content;
+}
+#page1 #mainText h1{
+    display: flex;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: teal;
+    animation-name: name;
+    animation-duration: 4s;
+    animation-delay: 1ms;
+    font-size: 4.5vmax;
+}
+#page1 #mainText h3{
+    display: flex;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 2vmax;
+    width: fit-content;
+    height: fit-content;
+ }
+
+@keyframes name{
+    from{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 2;
+    }
+}
+#page1 #picBox{
+    width: 30%;
+    height: 25vh;
+    margin-left: -35%;  
+    background: #000; 
+    margin-top: 95vh;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    gap: 30; 
+    display: flex;
+}
+#page1 #picBox #picBox1{
+    width: 90%;
+    margin-top: 1%; 
+    height: 14vh;
+    border-radius: 15px; 
+    position: absolute;
+    z-index: 600;
+    background: teal;
+    opacity: 0.3;
+}
+#page1 #picBox #picBox1{
+     scale: 1;
+}
+#page1 #picBox #picBox2{
+    width: 90%;
+    margin-top: 1%; 
+    height: 14vh;
+    position: absolute;
+    z-index: 600;
+    border-radius: 15px;
+    background: black;
+    background: teal;
+    opacity: 0.3;
+}
+#page1 #picBox #picBox3{
+    width: 90%;
+    margin-top: 1%; 
+    border-radius: 15px;
+    height: 14vh;
+    position: absolute;
+    z-index: 600;
+    background: teal;
+    opacity: 0.3;
+}
+#page1 #Slider{
+     
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 50%;
+    height: 70vh;
+    left: 50%;
+    top: 30%;
+    position: absolute;
+}
+#page1 #Slider #insideSlider img{
+    width: 100%;
+    position:absolute;
+    
+} 
+#page1 #Slider #insideSlider :nth-child(2){
+    margin-left: 120%;
+}
+#page1 #Slider #insideSlider{
+    animation-name: slider;
+    animation-duration: 6s;
+    animation-delay: 5ms;
+} 
+
+@keyframes slider{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}
+#page1 #button button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#page1 #button button{
+    background: teal;
+    color: whitesmoke;
+    width: 20%;
+    height: 10vh;
+    border-radius: 250px;
+}
+#wrapper #page4{
+    width: 100%;
+    height: 58vh;
+    opacity: 0.8;
+    background: rgba(0, 128, 128, 0.553);
+     
+    position: relative;
+}
+#wrapper #page4 img{
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    height: fit-content;
+    background: rgba(0, 128, 128, 0.532);
+    mix-blend-mode: multiply;
+    object-fit: cover;
+}
+#page2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#page2 #about{
+    overflow-x: hidden;
+    padding-top: 10%;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background: teal;
+}
+
+#page2 #about h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+#page2 #about p{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+#page2 #clabs{
+    overflow-x: hidden;
+    position: absolute;
+    margin-top: 40%;
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    background: whitesmoke;
+    box-shadow: 0px 4px 7.7px 3px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+ #clabs #clabOne{
+    text-align: center;
+     justify-content: center;
+     align-items: center;
+    margin-left: 2%;
+    border-radius: 20px;
+    width:30% ;
+    height: 80%; 
+    background: teal;
+    box-shadow: 7px 7px 15.3px 4px rgba(0, 0, 0, 0.70) inset;
+
+    opacity: 1;
+ }
+ #clabs #clabOne h1{
+    opacity: 1;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+ }
+ #clabs #clabTwo{
+    text-align: center;
+    box-shadow: 7px 7px 15.3px 4px rgba(0, 0, 0, 0.70) inset;
+ 
+    margin-left: 2%;
+    border-radius: 20px;
+    width:30% ;
+    height: 80%; 
+    background: teal;
+    opacity: 1;
+ }
+ #clabs #clabTwo h1{
+    opacity: 1;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+ }
+ #clabs #clabThree{
+    text-align: center;
+    box-shadow: 7px 7px 15.3px 4px rgba(0, 0, 0, 0.70) inset;
+ 
+    margin-left: 2%;
+    border-radius: 20px;
+    width:30% ;
+    height: 80%; 
+    background: teal;
+    opacity: 1;
+ }
+ #clabs #clabThree h1{
+    opacity: 1;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+ }
+ #clabs #clabOne p{
+    opacity: 1;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-top: 60px;
+    color: white;
+ }
+ #clabs #clabTwo p{
+    opacity: 1;
+    font-family: sans-serif;
+    font-weight: 200;
+    width: 17vmax;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 60px;
+    color: white;
+ }
+ #clabs #clabThree p{
+    opacity: 1;
+    margin-top: 60px;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+ }
+ #page3 #op{
+    justify-content: center;
+    align-items: center;
+    
+ }
+ #page3 #op h1{
+    text-align: center;
+    margin-top: 150px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: teal;
+    
+    
+ }
