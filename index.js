@@ -6,8 +6,8 @@ gsap.from("#clabs",{
     scrollTrigger:{
         trigger:"#page2 ",
         scroller:"body",
-        start:"top -10%",
-        markers:true
+        start:"top -25%",
+     
     }
      
 }) 
@@ -80,12 +80,7 @@ gsap.from("#clabThree p",{
     delay:9,
     opacity:0
 })
-gsap.from("#page3 #op h1 ",{
-    x:-190,
-    opacity:0,
-    duration:4,
-    delay:7
-})
+ 
 gsap.from("#page1 #mainNav",{
      
     y:-110,
@@ -95,21 +90,20 @@ gsap.from("#page1 #mainNav",{
         trigger:"#page1 ",
         scroller:"body",
         start:"top 10%",
-        markers:true
+    
     }
      
 }) 
-
-gsap.from("#page3 #op h1",{
-     
-    x:0,
-    duration:"7ms",
+ 
+gsap.from("#page3 #op h1 ",{
+    y:-190,
     opacity:1,
-    scrollTrigger:{
-        trigger:"#page3 ",
+    duration:4,
+    delay:7,scrollTrigger:{
+        trigger:"#op ",
         scroller:"body",
-        start:"top -10%",
-        markers:true
+        start:"top 10%",
+    
     }
      
-}) 
+})
