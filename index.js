@@ -99,7 +99,7 @@ gsap.from("#page3 #op h1 ",{
     y:-190,
     opacity:1,
     duration:4,
-    delay:7,scrollTrigger:{
+     scrollTrigger:{
         trigger:"#op ",
         scroller:"body",
         start:"top 10%",
