@@ -28,6 +28,9 @@ body{
     height: 100vh;
     
 }
+#page1 #mainNav  svg{
+    display: none;
+}
 #page1 #mainNav ul a{
  gap: 60;
  font-family: sans-serif;
@@ -407,20 +410,41 @@ body{
         padding-top: 5%;
     }
     #clabs{
+        display: none;
+        height: 1%;
         margin-top: 120%;
-        z-index: 1200;
+        z-index: 1500;
+    }
+    #clabs #clabOne,#clabs #clabThree{
+        height: 45%;
+
     }
     #clabs #clabOne h1,
     #clabs #clabThree h1 {
         font-size: 3vmin;
+        
     }
 
     #clabs #clabOne p,
     #clabs #clabThree p {
         font-size: 1.5vmin;
     }
-
+    #page3 #op h1{
+        padding-bottom: -20%;
+    }
     #footer {
         height: 20vh;
     }
 }
+#page1 #mainNav svg{
+    display: contents;
+}
+#page1 #mainNav ul a{
+    display: none;
+    gap: 60;
+    font-family: sans-serif;
+    color: teal;
+    margin: 20px;
+    margin-top: 20%;
+    text-decoration: none;
+   }
