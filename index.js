@@ -2,6 +2,7 @@ gsap.from("#clabs",{
      
     y:110,
     duration:1,
+    opacity:0,
      
     scrollTrigger:{
         trigger:"#page2 ",
