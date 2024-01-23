@@ -95,10 +95,10 @@ gsap.from("#page1 #mainNav",{
      
 }) 
  
-gsap.from("#page3 #op h1 ",{
-    y:-170,
-    opacity:1,
-    duration:1,
+gsap.from(" #op h1 ",{
+    y:80,
+    opacity:0,
+    
      scrollTrigger:{
         trigger:"#op ",
         scroller:"body",
